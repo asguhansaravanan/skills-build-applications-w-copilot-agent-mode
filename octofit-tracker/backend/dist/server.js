@@ -6,5 +6,5 @@ const baseUrl = process.env.CODESPACE_NAME
     : 'http://localhost:8000';
 await connectDatabase();
 app.listen(port, '0.0.0.0', () => {
-    console.log(`OctoFit API listening on ${baseUrl}`);
+    console.log(`OctoFit API listening on ${baseUrl} (port ${port})`);
 });
